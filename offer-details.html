@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Umrah Packages | Touggourt Travel</title>
+<title>تفاصيل عروض العمرة | وكالة تقرت للسياحة و السفر</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;800&display=swap" rel="stylesheet">
 
@@ -23,7 +23,7 @@ body{
   color:var(--text);
 }
 
-/* HERO */
+/* العنوان الرئيسي */
 .hero{
   background:linear-gradient(135deg,#0b3c5d,#082f49);
   color:#fff;
@@ -31,58 +31,56 @@ body{
   text-align:center;
 }
 .hero h1{
-  font-size:34px;
+  font-size:32px;
   margin:0;
   font-weight:800;
 }
 .hero p{
   margin-top:15px;
   font-size:17px;
-  line-height:1.8;
+  line-height:1.9;
   opacity:.95;
 }
 
-/* CONTAINER */
+/* المحتوى */
 .container{
   max-width:1100px;
   margin:auto;
   padding:40px 20px;
 }
 
-/* SECTION */
-.section{
-  margin-bottom:40px;
+/* بطاقة */
+.card{
+  background:var(--card);
+  border-radius:16px;
+  padding:28px;
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+  margin-bottom:35px;
 }
+
+/* عنوان القسم */
 .section-title{
   font-size:22px;
   font-weight:800;
   color:var(--primary);
-  margin-bottom:20px;
+  margin-bottom:12px;
 }
 
-/* CARD */
-.card{
-  background:var(--card);
-  border-radius:16px;
-  padding:25px;
-  box-shadow:0 12px 30px rgba(0,0,0,.08);
-}
-
-/* DATES */
+/* التاريخ */
 .dates{
   font-weight:600;
-  margin-bottom:20px;
   color:#374151;
+  margin-bottom:20px;
 }
 
-/* PRICES */
+/* الأسعار */
 .prices{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
   gap:20px;
 }
 .price{
-  border:1.8px solid var(--gold);
+  border:2px solid var(--gold);
   border-radius:14px;
   padding:18px;
   text-align:center;
@@ -100,7 +98,32 @@ body{
   color:var(--gold);
 }
 
-/* FOOTER */
+/* تحفيز */
+.motivation{
+  text-align:center;
+  font-size:18px;
+  line-height:2;
+  color:#1f2933;
+  margin:40px 0;
+  font-weight:600;
+}
+
+/* زر */
+.cta{
+  text-align:center;
+}
+.cta a{
+  background:var(--primary);
+  color:#fff;
+  padding:16px 45px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:16px;
+}
+.cta a:hover{opacity:.9}
+
+/* التذييل */
 .footer{
   background:#0b3c5d;
   color:#fff;
@@ -108,100 +131,85 @@ body{
   padding:25px;
   font-size:15px;
 }
-
-/* BUTTON */
-.cta{
-  margin-top:50px;
-  text-align:center;
-}
-.cta a{
-  background:var(--primary);
-  color:#fff;
-  padding:16px 40px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:700;
-  font-size:16px;
-}
-.cta a:hover{opacity:.9}
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
+<!-- العنوان -->
 <section class="hero">
-  <h1>Umrah Packages 1447 H</h1>
+  <h1>عروض العمرة 1447 هـ</h1>
   <p>
-    Touggourt Travel & Tourism Agency<br>
-    Riyad Al Diyafa Hotel – Jarwal Street<br>
-    900 meters from Al-Haram
+    وكالة تقرت للسياحة و السفر<br>
+    فندق رياض الضيافة – شارع جرول<br>
+    900 متر فقط عن الحرم الشريف
   </p>
 </section>
 
 <div class="container">
 
   <!-- شعبان -->
-  <div class="section">
-    <div class="section-title">Shaaban Umrah</div>
-    <div class="card">
-      <div class="dates">05 February → 19 February</div>
-      <div class="prices">
-        <div class="price"><h3>Quad</h3><span>189,000 DZD</span></div>
-        <div class="price"><h3>Triple</h3><span>209,000 DZD</span></div>
-        <div class="price"><h3>Double</h3><span>229,000 DZD</span></div>
-      </div>
+  <div class="card">
+    <div class="section-title">عمرة شعبان</div>
+    <div class="dates">05 فيفري ⟵ 19 فيفري</div>
+    <div class="prices">
+      <div class="price"><h3>جماعي</h3><span>189.000 دج</span></div>
+      <div class="price"><h3>ثلاثي</h3><span>209.000 دج</span></div>
+      <div class="price"><h3>ثنائي</h3><span>229.000 دج</span></div>
     </div>
   </div>
 
   <!-- أوائل رمضان -->
-  <div class="section">
-    <div class="section-title">Early Ramadan</div>
-    <div class="card">
-      <div class="dates">19 February → 05 March</div>
-      <div class="prices">
-        <div class="price"><h3>Quad</h3><span>269,000 DZD</span></div>
-        <div class="price"><h3>Triple</h3><span>296,000 DZD</span></div>
-        <div class="price"><h3>Double</h3><span>340,000 DZD</span></div>
-      </div>
+  <div class="card">
+    <div class="section-title">عمرة أوائل رمضان</div>
+    <div class="dates">19 فيفري ⟵ 05 مارس</div>
+    <div class="prices">
+      <div class="price"><h3>جماعي</h3><span>269.000 دج</span></div>
+      <div class="price"><h3>ثلاثي</h3><span>296.000 دج</span></div>
+      <div class="price"><h3>ثنائي</h3><span>340.000 دج</span></div>
     </div>
   </div>
 
   <!-- أواخر رمضان -->
-  <div class="section">
-    <div class="section-title">Late Ramadan</div>
-    <div class="card">
-      <div class="dates">05 March → 19 March</div>
-      <div class="prices">
-        <div class="price"><h3>Quad</h3><span>380,000 DZD</span></div>
-        <div class="price"><h3>Triple</h3><span>335,000 DZD</span></div>
-        <div class="price"><h3>Double</h3><span>520,000 DZD</span></div>
-      </div>
+  <div class="card">
+    <div class="section-title">عمرة أواخر رمضان</div>
+    <div class="dates">05 مارس ⟵ 19 مارس</div>
+    <div class="prices">
+      <div class="price"><h3>جماعي</h3><span>380.000 دج</span></div>
+      <div class="price"><h3>ثلاثي</h3><span>335.000 دج</span></div>
+      <div class="price"><h3>ثنائي</h3><span>520.000 دج</span></div>
     </div>
   </div>
 
   <!-- رمضان كامل -->
-  <div class="section">
-    <div class="section-title">Full Ramadan</div>
-    <div class="card">
-      <div class="dates">26 February → 26 March</div>
-      <div class="prices">
-        <div class="price"><h3>Quad</h3><span>425,000 DZD</span></div>
-        <div class="price"><h3>Triple</h3><span>480,000 DZD</span></div>
-        <div class="price"><h3>Double</h3><span>600,000 DZD</span></div>
-      </div>
+  <div class="card">
+    <div class="section-title">عمرة شهر رمضان كامل</div>
+    <div class="dates">26 فيفري ⟵ 26 مارس</div>
+    <div class="prices">
+      <div class="price"><h3>جماعي</h3><span>425.000 دج</span></div>
+      <div class="price"><h3>ثلاثي</h3><span>480.000 دج</span></div>
+      <div class="price"><h3>ثنائي</h3><span>600.000 دج</span></div>
     </div>
   </div>
 
-  <!-- CTA -->
+  <!-- تحفيز -->
+  <div class="motivation">
+    ✨ فرصة روحانية عظيمة لأداء العمرة في أفضل الأوقات  
+    <br>
+    ✨ إقامة قريبة من الحرم وخدمة منظمة بعناية  
+    <br>
+    ✨ عدد محدود من المقاعد
+  </div>
+
+  <!-- زر -->
   <div class="cta">
-    <a href="registration.html">Register Now</a>
+    <a href="registration.html">سجّل الآن</a>
   </div>
 
 </div>
 
 <div class="footer">
-  Touggourt Travel & Tourism Agency
+  وكالة تقرت للسياحة و السفر
 </div>
 
 </body>
