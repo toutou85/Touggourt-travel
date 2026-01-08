@@ -3,132 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تفاصيل عروض العمرة | وكالة تقرت للسياحة و السفر</title>
+<title>عروض العمرة | وكالة تقرت للسياحة و السفر</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
-:root{
-  --primary:#0b3c5d;
-  --gold:#c9a23f;
-  --bg:#f6f7f9;
-  --card:#ffffff;
-  --text:#1f2933;
-}
-*{box-sizing:border-box}
 body{
   margin:0;
   font-family:'Tajawal',sans-serif;
-  background:var(--bg);
-  color:var(--text);
+  background:#f5f5f5;
+  color:#222;
+  line-height:1.9;
 }
-
-/* العنوان الرئيسي */
-.hero{
-  background:linear-gradient(135deg,#0b3c5d,#082f49);
+.header{
+  background:#0b3c5d;
   color:#fff;
-  padding:60px 20px;
+  padding:35px 20px;
   text-align:center;
 }
-.hero h1{
-  font-size:32px;
+.header h1{
   margin:0;
+  font-size:28px;
   font-weight:800;
 }
-.hero p{
-  margin-top:15px;
-  font-size:17px;
-  line-height:1.9;
+.header p{
+  margin-top:12px;
+  font-size:16px;
   opacity:.95;
 }
-
-/* المحتوى */
 .container{
-  max-width:1100px;
+  max-width:900px;
   margin:auto;
-  padding:40px 20px;
+  padding:30px 20px;
 }
-
-/* بطاقة */
-.card{
-  background:var(--card);
-  border-radius:16px;
-  padding:28px;
-  box-shadow:0 12px 30px rgba(0,0,0,.08);
-  margin-bottom:35px;
+.offer{
+  background:#fff;
+  border-radius:12px;
+  padding:22px;
+  margin-bottom:25px;
+  box-shadow:0 6px 15px rgba(0,0,0,.08);
 }
-
-/* عنوان القسم */
-.section-title{
+.offer h2{
+  margin:0 0 8px;
+  color:#0b3c5d;
   font-size:22px;
-  font-weight:800;
-  color:var(--primary);
+}
+.date{
+  font-weight:600;
   margin-bottom:12px;
+  color:#444;
 }
-
-/* التاريخ */
-.dates{
-  font-weight:600;
-  color:#374151;
-  margin-bottom:20px;
-}
-
-/* الأسعار */
 .prices{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:20px;
-}
-.price{
-  border:2px solid var(--gold);
-  border-radius:14px;
-  padding:18px;
-  text-align:center;
-}
-.price h3{
-  margin:0;
-  font-size:17px;
-  color:var(--primary);
-}
-.price span{
-  display:block;
   margin-top:10px;
-  font-size:22px;
-  font-weight:800;
-  color:var(--gold);
 }
-
-/* تحفيز */
-.motivation{
-  text-align:center;
-  font-size:18px;
-  line-height:2;
-  color:#1f2933;
-  margin:40px 0;
-  font-weight:600;
-}
-
-/* زر */
-.cta{
-  text-align:center;
-}
-.cta a{
-  background:var(--primary);
-  color:#fff;
-  padding:16px 45px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:700;
+.prices div{
+  padding:6px 0;
+  border-bottom:1px dashed #ddd;
   font-size:16px;
 }
-.cta a:hover{opacity:.9}
-
-/* التذييل */
+.prices div:last-child{
+  border-bottom:none;
+}
+.highlight{
+  background:#fffbe8;
+  border-right:5px solid #c9a23f;
+  padding:18px;
+  border-radius:10px;
+  margin:35px 0;
+  font-size:17px;
+}
+.cta{
+  text-align:center;
+  margin-top:30px;
+}
+.cta a{
+  background:#0b3c5d;
+  color:#fff;
+  padding:14px 45px;
+  border-radius:40px;
+  text-decoration:none;
+  font-size:16px;
+  font-weight:700;
+}
 .footer{
   background:#0b3c5d;
   color:#fff;
   text-align:center;
-  padding:25px;
+  padding:20px;
+  margin-top:40px;
   font-size:15px;
 }
 </style>
@@ -136,72 +98,62 @@ body{
 
 <body>
 
-<!-- العنوان -->
-<section class="hero">
+<div class="header">
   <h1>عروض العمرة 1447 هـ</h1>
   <p>
     وكالة تقرت للسياحة و السفر<br>
     فندق رياض الضيافة – شارع جرول<br>
-    900 متر فقط عن الحرم الشريف
+    يبعد 900 متر فقط عن الحرم الشريف
   </p>
-</section>
+</div>
 
 <div class="container">
 
-  <!-- شعبان -->
-  <div class="card">
-    <div class="section-title">عمرة شعبان</div>
-    <div class="dates">05 فيفري ⟵ 19 فيفري</div>
+  <div class="offer">
+    <h2>عمرة شعبان</h2>
+    <div class="date">05 فيفري → 19 فيفري</div>
     <div class="prices">
-      <div class="price"><h3>جماعي</h3><span>189.000 دج</span></div>
-      <div class="price"><h3>ثلاثي</h3><span>209.000 دج</span></div>
-      <div class="price"><h3>ثنائي</h3><span>229.000 دج</span></div>
+      <div>غرفة جماعية: <strong>189.000 دج</strong></div>
+      <div>غرفة ثلاثية: <strong>209.000 دج</strong></div>
+      <div>غرفة ثنائية: <strong>229.000 دج</strong></div>
     </div>
   </div>
 
-  <!-- أوائل رمضان -->
-  <div class="card">
-    <div class="section-title">عمرة أوائل رمضان</div>
-    <div class="dates">19 فيفري ⟵ 05 مارس</div>
+  <div class="offer">
+    <h2>عمرة أوائل رمضان</h2>
+    <div class="date">19 فيفري → 05 مارس</div>
     <div class="prices">
-      <div class="price"><h3>جماعي</h3><span>269.000 دج</span></div>
-      <div class="price"><h3>ثلاثي</h3><span>296.000 دج</span></div>
-      <div class="price"><h3>ثنائي</h3><span>340.000 دج</span></div>
+      <div>غرفة جماعية: <strong>269.000 دج</strong></div>
+      <div>غرفة ثلاثية: <strong>296.000 دج</strong></div>
+      <div>غرفة ثنائية: <strong>340.000 دج</strong></div>
     </div>
   </div>
 
-  <!-- أواخر رمضان -->
-  <div class="card">
-    <div class="section-title">عمرة أواخر رمضان</div>
-    <div class="dates">05 مارس ⟵ 19 مارس</div>
+  <div class="offer">
+    <h2>عمرة أواخر رمضان</h2>
+    <div class="date">05 مارس → 19 مارس</div>
     <div class="prices">
-      <div class="price"><h3>جماعي</h3><span>380.000 دج</span></div>
-      <div class="price"><h3>ثلاثي</h3><span>335.000 دج</span></div>
-      <div class="price"><h3>ثنائي</h3><span>520.000 دج</span></div>
+      <div>غرفة جماعية: <strong>380.000 دج</strong></div>
+      <div>غرفة ثلاثية: <strong>335.000 دج</strong></div>
+      <div>غرفة ثنائية: <strong>520.000 دج</strong></div>
     </div>
   </div>
 
-  <!-- رمضان كامل -->
-  <div class="card">
-    <div class="section-title">عمرة شهر رمضان كامل</div>
-    <div class="dates">26 فيفري ⟵ 26 مارس</div>
+  <div class="offer">
+    <h2>عمرة شهر رمضان كامل</h2>
+    <div class="date">26 فيفري → 26 مارس</div>
     <div class="prices">
-      <div class="price"><h3>جماعي</h3><span>425.000 دج</span></div>
-      <div class="price"><h3>ثلاثي</h3><span>480.000 دج</span></div>
-      <div class="price"><h3>ثنائي</h3><span>600.000 دج</span></div>
+      <div>غرفة جماعية: <strong>425.000 دج</strong></div>
+      <div>غرفة ثلاثية: <strong>480.000 دج</strong></div>
+      <div>غرفة ثنائية: <strong>600.000 دج</strong></div>
     </div>
   </div>
 
-  <!-- تحفيز -->
-  <div class="motivation">
-    ✨ فرصة روحانية عظيمة لأداء العمرة في أفضل الأوقات  
-    <br>
-    ✨ إقامة قريبة من الحرم وخدمة منظمة بعناية  
-    <br>
-    ✨ عدد محدود من المقاعد
+  <div class="highlight">
+    فرصة إيمانية عظيمة لأداء العمرة في أفضل المواسم،  
+    بإقامة قريبة من الحرم وتنظيم مريح يساعدك على التفرغ للعبادة.
   </div>
 
-  <!-- زر -->
   <div class="cta">
     <a href="registration.html">سجّل الآن</a>
   </div>
