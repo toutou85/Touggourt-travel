@@ -141,10 +141,42 @@ button.submit{
 }
 
 footer{text-align:center;padding:15px;font-size:13px;opacity:.8}
+
+.whatsapp-top{
+  position: fixed;
+  top: 15px;
+  left: 15px; /* ← هنا التغيير */
+  width: 55px;
+  height: 55px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.whatsapp-top:hover{
+  background: #1ebe5d;
+}
+
+
 </style>
+
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
 
 <body>
+
+<a href="https://wa.me/213674141379" target="_blank" class="whatsapp-top">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <div class="menu-btn" id="menuBtn" onclick="openMenu()">☰</div>
 
